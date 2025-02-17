@@ -1,0 +1,48 @@
+body {
+  color: rgb(255, 255, 255);
+}
+
+.footer {
+  width: 90%;
+  margin: auto;
+  justify-content: space-evenly;
+  display: flex;
+  color: rgb(87, 83, 77);
+  opacity: 0.8;
+}
+.f1 {
+  width: 73%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+.f4 {
+  padding: 5px;
+  color: rgb(87, 83, 77);
+}
+.f12 {
+  border: rgb(87, 83, 77) 1px solid;
+  width: 10%;
+  line-height: 1;
+  display: inline-block;
+  text-align: center;
+  margin-left: 130px;
+  color: rgb(87, 83, 77);
+  cursor: pointer;
+}
+.f12:hover {
+  text-decoration-line: underline;
+}
+
+.footer ul {
+  align-items: center;
+  list-style: none;
+  cursor: pointer;
+}
+.footer ul li {
+  padding-bottom: 10px;
+}
+
+.footer ul li:hover {
+  text-decoration-line: underline;
+}
