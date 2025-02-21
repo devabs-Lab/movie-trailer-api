@@ -32,7 +32,9 @@
   cursor: pointer;
   list-style: none;
 }
-
+.headerin ul li:hover {
+  opacity: 0.8;
+}
 .third {
   margin-right: 10px;
   padding-top: 10px;

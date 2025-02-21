@@ -11,24 +11,26 @@ body {
   opacity: 0.8;
 }
 .f1 {
-  width: 73%;
-  margin: auto;
+  color: rgb(255, 255, 255);
   padding-top: 20px;
   padding-bottom: 5px;
+  /* align-items: center; */
 }
 .f4 {
-  padding: 5px;
+  padding: 5px 0;
   color: rgb(87, 83, 77);
 }
 .f12 {
   border: rgb(87, 83, 77) 1px solid;
-  width: 10%;
   line-height: 1;
   display: inline-block;
   text-align: center;
-  margin-left: 130px;
   color: rgb(87, 83, 77);
   cursor: pointer;
+}
+
+.b2 {
+  margin-top: 55px;
 }
 .f12:hover {
   text-decoration-line: underline;
@@ -46,3 +48,12 @@ body {
 .footer ul li:hover {
   text-decoration-line: underline;
 }
+
+
+
+
+
+
+
+
+

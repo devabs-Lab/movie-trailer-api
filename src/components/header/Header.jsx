@@ -21,7 +21,7 @@ function Header() {
             <li className="lists">Movies</li>
             <li className="lists">Latest</li>
             <li className="lists">MyList</li>
-            <li className="browser">Browse by Languages</li>
+            <li className="browser lists">Browse by Languages</li>
           </ul>
           <div className="third">
             <ul>

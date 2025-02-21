@@ -6,22 +6,23 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 function footer() {
   return (
     <>
-      <div className="f1">
-        <div>
-          <FacebookOutlinedIcon />
-          {"\u00A0"}
-          <InstagramIcon />
-          {"\u00A0"}
-          <YouTubeIcon />
-        </div>
-      </div>
+      <div></div>
       <div className="footer">
         <div className="b1">
+          <div className="f1">
+            <FacebookOutlinedIcon />
+            {"\u00A0"}
+            <InstagramIcon />
+            {"\u00A0"}
+            <YouTubeIcon />
+          </div>
           <ul>
             <li>Audio Description</li>
             <li>Investor Relation</li>
             <li>Legal Notice</li>
+            <div className="f12">Service Code</div>
           </ul>
+          <div className="f4">&copy; 1997-2024 Netflix, Inc.</div>
         </div>
         <div className="b2">
           <ul>
@@ -30,14 +31,14 @@ function footer() {
             <li>Cookies Preferences</li>
           </ul>
         </div>
-        <div className="b3">
+        <div className="b2">
           <ul>
             <li>Gift Cards</li>
             <li>Terms of Use</li>
             <li>Corporate Information</li>
           </ul>
         </div>
-        <div className="b4">
+        <div className="b2">
           <ul>
             <li>Media Center</li>
             <li>Privacy</li>
@@ -45,10 +46,6 @@ function footer() {
           </ul>
         </div>
       </div>
-      <div className="f12">
-       Service Code
-      </div>
-      <div className="f1 f4">&copy; 1997-2024 Netflix, Inc.</div>
     </>
   );
 }
