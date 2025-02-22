@@ -9,6 +9,8 @@ body {
   display: flex;
   color: rgb(87, 83, 77);
   opacity: 0.8;
+  padding-bottom: 100px;
+  padding-top: 20px;
 }
 .f1 {
   color: rgb(255, 255, 255);

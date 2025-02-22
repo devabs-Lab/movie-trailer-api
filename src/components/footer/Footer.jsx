@@ -6,7 +6,7 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 function footer() {
   return (
     <>
-      <div></div>
+      
       <div className="footer">
         <div className="b1">
           <div className="f1">

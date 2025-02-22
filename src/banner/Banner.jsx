@@ -8,7 +8,7 @@ function Banner() {
   useEffect(() => {
     (async () => {
       try {
-        const request = await axios.get(requests.fetchNetflixoriginals);
+        const request = await axios.get(requests.fetchTopRatedmovies);
         console.log(request);
         setMovie(
           request.data.results[
