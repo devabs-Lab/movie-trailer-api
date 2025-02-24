@@ -5,11 +5,12 @@ import "./banner.css";
 
 function Banner() {
   const [movie, setMovie] = useState({});
+  const [isTruncated, setIsTruncated] = useState(true);
+
   useEffect(() => {
     (async () => {
       try {
         const request = await axios.get(requests.fetchTopRatedmovies);
-        console.log(request);
         setMovie(
           request.data.results[
             Math.floor(Math.random() * request.data.results.length)
@@ -20,9 +21,12 @@ function Banner() {
       }
     })();
   }, []);
-  function truncate(str, n) {
-    return str?.length > n ? str.slice(0, n) + "..." : str;
-  }
+
+  const truncate = (str, n) => {
+    if (!str) return ""; // Prevent errors if str is undefined
+    return isTruncated && str.length > n ? str.slice(0, n) + "..." : str;
+  };
+
   return (
     <>
       <div
@@ -30,8 +34,8 @@ function Banner() {
         style={{
           backgroundImage: `url('https://image.tmdb.org/t/p/original${movie?.backdrop_path}')`,
           backgroundSize: "cover",
-          backgroundRepeat: "center",
-          backgroundPosition: "no-repeat",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
         }}
       >
         <div className="banner_contents">
@@ -42,7 +46,10 @@ function Banner() {
             <button className="banner_button play">play</button>
             <button className="banner_button">My lists</button>
           </div>
-          <h1 className="banner_description">
+          <h1
+            className={`banner_description ${!isTruncated ? "describer" : ""}`}
+            onClick={() => setIsTruncated((prev) => !prev)}
+          >
             {truncate(movie?.overview, 150)}
           </h1>
         </div>

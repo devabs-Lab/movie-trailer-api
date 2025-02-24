@@ -1,37 +1,108 @@
-.row_poster{
-    width: 100%;
-    object-fit: contain;
-    max-height: 100px;
-    transition: transform 450ms;
-    margin-right: 10px;
+:root {
+  --width: 150px;
+  --height: 250px;
+  --quantity: 20;
+}
+h1 {
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+.row {
+  width: 100%;
+  /* height: var(--height); */
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, #000 30% 90%, transparent);
+  margin-left: 10px;
+  position: inherit;
+  /* z-index: 999; */
 }
 
-.row_posters{
-    display: flex;
-    overflow-y: hidden;
-    overflow-x:scroll;
-    padding: 20px;
+.row_posters {
+  display: flex;
+  object-fit: contain;
+  white-space: nowrap;
+  width: max-content;
+  transition: transform 450ms;
+  /* animation-duration: calc(var(--quantity) * 2s); */
+  animation: marquee 200s linear infinite;
+}
+.row_posters .items {
+  display: inline-block;
+}
+.row_posters .items img {
+  width: inherit;
+  height: inherit;
+  padding: 10px;
+}
+.fororiginals img {
+  width: 250px;
+  padding: 10px;
+}
+.row_poster:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+}
+.row_posters:hover {
+  animation-play-state: paused !important;
 }
 
-.row_poster::-webkit_scrollbar{
-   display: none;
+.row_posterLarge {
+  max-height: 250px;
 }
 
-.row_poster:hover{
-    transform: scale(1.08);
+.row_Posterchange {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
 }
 
-.row_posterLarge{
-    max-height: 250px;
-}
-
-
-.row_posterLarge:hover{
+.row_posterLarge:hover {
   transform: scale(1.09);
+  cursor: pointer;
+}
+.overlayyy {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  background: transparent;
+}
+.short {
+  position: relative;
+  z-index: 6;
 }
 
-.row{
-    margin-left: 20px;
-    /* padding-top: 30px; */
-    color: white;
+@keyframes marquee {
+  from {
+    transform: translateX(-0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marqueeLarge {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(-0%);
+  }
+}
+
+@media (max-width: 500px) {
+  .fororiginals img {
+    width: 220px;
+    padding: 10px;
+  }
+}
+
+.swiper-slide {
+  /* width: 200px !important; */
+}
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 3px;
 }

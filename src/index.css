@@ -4,9 +4,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  background: #111;
+  background: hwb(0 7% 93%);
+  font-family: Inter, Montserrat;
+  font-weight: 100;
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
 }
+
 /*
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

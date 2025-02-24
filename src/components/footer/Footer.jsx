@@ -6,15 +6,14 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 function footer() {
   return (
     <>
-      
       <div className="footer">
         <div className="b1">
           <div className="f1">
-            <FacebookOutlinedIcon />
+            <FacebookOutlinedIcon className="f11" />
             {"\u00A0"}
-            <InstagramIcon />
+            <InstagramIcon className="f11" />
             {"\u00A0"}
-            <YouTubeIcon />
+            <YouTubeIcon className="f11" />
           </div>
           <ul>
             <li>Audio Description</li>
