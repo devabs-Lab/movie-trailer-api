@@ -12,6 +12,7 @@
   background-color: transparent;
   height: 10vh;
   color: white;
+
   transition: all 0.5s;
   transition-timing-function: ease-in;
   z-index: 999 !important;
@@ -19,6 +20,7 @@
 
 .headerin {
   display: grid;
+  padding: 5px;
   background-color: black;
   grid-template-columns: 20% 50% 30%; /* First column 20%, second column 80% */
   width: 100%;
@@ -74,7 +76,7 @@ ul .addi:last-child {
 }
 
 img {
-  width: 70px;
+  width: 90px;
 }
 
 .dropone {
@@ -270,6 +272,11 @@ img {
 @media (min-width: 1000px) and (max-width: 1200px) {
   .headerin ul {
     font-size: 15px;
+  }
+}
+@media (max-width: 550px) {
+  img {
+    margin-left: 15px;
   }
 }
 
