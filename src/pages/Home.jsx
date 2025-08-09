@@ -1,9 +1,8 @@
 import React from "react";
-import Header from "../components/Header/Header.jsx";
+import Header from "../components/header/Header.jsx";
 import Banner from "../banner/Banner.jsx";
-import Footer from "../components/Footer/Footer.jsx";
-import Rowlist from "../components/Rows/rowlist/Rowlist.jsx"
-
+import Footer from "../components/footer/Footer.jsx";
+import Rowlist from "../components/Rows/rowlist/Rowlist.jsx";
 
 function Home() {
   return (
