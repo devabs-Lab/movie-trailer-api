@@ -10,7 +10,7 @@ function Header() {
   const [blockage, setBlockage] = useState(false);
   const [dropdown, setDropdown] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
   const [selectedItem, setSelectedItem] = useState("Select Genre");
 
   const items = [
