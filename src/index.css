@@ -3,9 +3,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
-html, body {
+html,body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -88,7 +89,26 @@ button:focus-visible {
 */
 
 @media (max-width: 501px) {
-  h1{
-    font-size:14px !important;
+  h1 {
+    font-size: 14px !important;
   }
 }
+
+/* Classic Thin Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+

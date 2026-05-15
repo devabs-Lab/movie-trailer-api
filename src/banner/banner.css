@@ -12,7 +12,7 @@
 
 .banner_contents {
   margin-left: 30px;
-  padding-top: 280px;
+  padding-top: 390px;
 }
 
 .banner_title {
@@ -121,7 +121,7 @@
 
 .banner_contents {
   margin-left: 15px;
-  /* padding-top: 290px; */
+  /* padding-top: 390px; */
 }
 
 }
@@ -130,6 +130,9 @@
 }
 
 @media (max-width: 390px) {
+.banner_description{
+  max-width: 305px !important;
+}
 .describer {
     max-width: 315px !important;
     max-height: max-content !important ;
@@ -155,5 +158,7 @@
 .banner_title{
   font-size: 1.5rem !important;
 }
+
+
 }
 
