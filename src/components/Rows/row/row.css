@@ -9,12 +9,10 @@ h1 {
 }
 .row {
   width: 100%;
-  /* height: var(--height); */
   overflow: hidden;
   mask-image: linear-gradient(to right, transparent, #000 30% 90%, transparent);
-  margin-left: 10px;
-  position: inherit;
-  /* z-index: 999; */
+  padding-left: 20px;
+  position: relative;
 }
 
 .row_posters {
